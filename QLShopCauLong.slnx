@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="QLShopCauLong/QLShopCauLong.csproj" Id="cc4e33e8-8aba-466a-a24d-00701366c744" />
+  <Project Path="QLShopCauLongSetup/QLShopCauLongSetup.vdproj" Type="Installer">
+    <Build />
+  </Project>
+</Solution>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="58504052435347c29d96dc5427b31491" Name="Diagram1">
+        <EntityTypeShape EntityType="QLShopCauLongModel.ChiTietHoaDon" Width="1.5" PointX="5.25" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLShopCauLongModel.ChiTietKho" Width="1.5" PointX="5.25" PointY="8.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLShopCauLongModel.ChiTietPhieuNhap" Width="1.5" PointX="8.25" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLShopCauLongModel.DanhMuc" Width="1.5" PointX="0.75" PointY="5.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLShopCauLongModel.HoaDon" Width="1.5" PointX="3" PointY="11.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLShopCauLongModel.KhachHang" Width="1.5" PointX="0.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLShopCauLongModel.NhaCungCap" Width="1.5" PointX="3.75" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLShopCauLongModel.NhanVien" Width="1.5" PointX="0.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLShopCauLongModel.PhieuNhap" Width="1.5" PointX="6" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLShopCauLongModel.SanPham" Width="1.5" PointX="3" PointY="4.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLShopCauLongModel.TaiKhoan" Width="1.5" PointX="3" PointY="15.375" IsExpanded="true" />
+        <AssociationConnector Association="QLShopCauLongModel.FK__ChiTietHo__MaHoa__571DF1D5" ManuallyRouted="false" />
+        <AssociationConnector Association="QLShopCauLongModel.FK__ChiTietHo__MaSan__5812160E" ManuallyRouted="false" />
+        <AssociationConnector Association="QLShopCauLongModel.FK__ChiTietKh__MaSan__4222D4EF" ManuallyRouted="false" />
+        <AssociationConnector Association="QLShopCauLongModel.FK__ChiTietPh__MaPhi__4E88ABD4" ManuallyRouted="false" />
+        <AssociationConnector Association="QLShopCauLongModel.FK__ChiTietPh__MaSan__4F7CD00D" ManuallyRouted="false" />
+        <AssociationConnector Association="QLShopCauLongModel.FK__SanPham__MaDanhM__3F466844" ManuallyRouted="false" />
+        <AssociationConnector Association="QLShopCauLongModel.FK__HoaDon__MaKhachH__52593CB8" ManuallyRouted="false" />
+        <AssociationConnector Association="QLShopCauLongModel.FK__HoaDon__MaNhanVi__534D60F1" ManuallyRouted="false" />
+        <AssociationConnector Association="QLShopCauLongModel.FK__PhieuNhap__MaNCC__49C3F6B7" ManuallyRouted="false" />
+        <AssociationConnector Association="QLShopCauLongModel.FK__PhieuNhap__MaNha__4AB81AF0" ManuallyRouted="false" />
+        <AssociationConnector Association="QLShopCauLongModel.FK__TaiKhoan__MaNhan__398D8EEE" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

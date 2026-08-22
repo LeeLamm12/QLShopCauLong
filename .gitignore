@@ -1,0 +1,33 @@
+## Visual Studio / .NET Framework gitignore
+
+# Build results
+[Bb]in/
+[Oo]bj/
+[Dd]ebug/
+[Rr]elease/
+
+# Visual Studio cache/options
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# NuGet packages (bạn gái sẽ tự restore lại khi build, không cần push lên)
+packages/
+*.nupkg
+
+# ReSharper / other tool caches
+_ReSharper*/
+*.DotSettings.user
+
+# Test results
+TestResults/
+
+# Publish/Deploy
+publish/
+*.publishsettings
+
+# Rác hệ điều hành
+.DS_Store
+Thumbs.db
