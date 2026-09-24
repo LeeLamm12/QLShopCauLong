@@ -40,7 +40,10 @@
             // panel_DangNhap
             // 
             this.panel_DangNhap.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel_DangNhap.BorderColor = System.Drawing.Color.Black;
+            this.panel_DangNhap.BackColor = System.Drawing.Color.Transparent;
+            this.panel_DangNhap.BorderColor = System.Drawing.Color.DodgerBlue;
+            this.panel_DangNhap.BorderRadius = 30;
+            this.panel_DangNhap.BorderThickness = 1;
             this.panel_DangNhap.Controls.Add(this.lbl_ThongBao);
             this.panel_DangNhap.Controls.Add(this.lbl_DangNhap);
             this.panel_DangNhap.Controls.Add(this.btn_DangNhap);
@@ -72,7 +75,7 @@
             this.lbl_DangNhap.BackColor = System.Drawing.Color.Transparent;
             this.lbl_DangNhap.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.lbl_DangNhap.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.lbl_DangNhap.Location = new System.Drawing.Point(137, 32);
+            this.lbl_DangNhap.Location = new System.Drawing.Point(141, 34);
             this.lbl_DangNhap.Name = "lbl_DangNhap";
             this.lbl_DangNhap.Size = new System.Drawing.Size(153, 31);
             this.lbl_DangNhap.TabIndex = 3;
@@ -80,6 +83,7 @@
             // 
             // btn_DangNhap
             // 
+            this.btn_DangNhap.BorderRadius = 10;
             this.btn_DangNhap.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btn_DangNhap.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btn_DangNhap.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -87,7 +91,7 @@
             this.btn_DangNhap.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btn_DangNhap.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_DangNhap.ForeColor = System.Drawing.Color.White;
-            this.btn_DangNhap.Location = new System.Drawing.Point(108, 266);
+            this.btn_DangNhap.Location = new System.Drawing.Point(121, 257);
             this.btn_DangNhap.Margin = new System.Windows.Forms.Padding(4);
             this.btn_DangNhap.Name = "btn_DangNhap";
             this.btn_DangNhap.Size = new System.Drawing.Size(195, 55);
@@ -97,16 +101,15 @@
             // 
             // txt_MatKhau
             // 
-            this.txt_MatKhau.BackColor = System.Drawing.Color.DodgerBlue;
-            this.txt_MatKhau.BorderColor = System.Drawing.Color.White;
-            this.txt_MatKhau.BorderThickness = 0;
+            this.txt_MatKhau.BackColor = System.Drawing.Color.Transparent;
+            this.txt_MatKhau.BorderColor = System.Drawing.Color.DodgerBlue;
+            this.txt_MatKhau.BorderRadius = 7;
             this.txt_MatKhau.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txt_MatKhau.DefaultText = "";
             this.txt_MatKhau.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.txt_MatKhau.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.txt_MatKhau.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txt_MatKhau.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txt_MatKhau.FillColor = System.Drawing.Color.WhiteSmoke;
             this.txt_MatKhau.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txt_MatKhau.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_MatKhau.ForeColor = System.Drawing.Color.DodgerBlue;
@@ -123,16 +126,15 @@
             // 
             // txt_TenDangNhap
             // 
-            this.txt_TenDangNhap.BackColor = System.Drawing.Color.DodgerBlue;
-            this.txt_TenDangNhap.BorderColor = System.Drawing.Color.White;
-            this.txt_TenDangNhap.BorderThickness = 0;
+            this.txt_TenDangNhap.BackColor = System.Drawing.Color.Transparent;
+            this.txt_TenDangNhap.BorderColor = System.Drawing.Color.DodgerBlue;
+            this.txt_TenDangNhap.BorderRadius = 7;
             this.txt_TenDangNhap.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txt_TenDangNhap.DefaultText = "";
             this.txt_TenDangNhap.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.txt_TenDangNhap.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.txt_TenDangNhap.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txt_TenDangNhap.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txt_TenDangNhap.FillColor = System.Drawing.Color.WhiteSmoke;
             this.txt_TenDangNhap.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txt_TenDangNhap.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_TenDangNhap.ForeColor = System.Drawing.Color.DodgerBlue;
