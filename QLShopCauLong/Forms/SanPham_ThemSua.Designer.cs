@@ -51,7 +51,7 @@
             this.lbl_MaSanPham.AutoSize = true;
             this.lbl_MaSanPham.BackColor = System.Drawing.Color.Transparent;
             this.lbl_MaSanPham.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.lbl_MaSanPham.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.lbl_MaSanPham.ForeColor = System.Drawing.Color.Navy;
             this.lbl_MaSanPham.Location = new System.Drawing.Point(60, 52);
             this.lbl_MaSanPham.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_MaSanPham.Name = "lbl_MaSanPham";
@@ -61,6 +61,9 @@
             // 
             // txt_MaSanPham
             // 
+            this.txt_MaSanPham.BackColor = System.Drawing.Color.Transparent;
+            this.txt_MaSanPham.BorderColor = System.Drawing.Color.White;
+            this.txt_MaSanPham.BorderRadius = 7;
             this.txt_MaSanPham.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txt_MaSanPham.DefaultText = "";
             this.txt_MaSanPham.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -69,6 +72,7 @@
             this.txt_MaSanPham.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txt_MaSanPham.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txt_MaSanPham.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.txt_MaSanPham.ForeColor = System.Drawing.Color.DarkBlue;
             this.txt_MaSanPham.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txt_MaSanPham.Location = new System.Drawing.Point(65, 81);
             this.txt_MaSanPham.Margin = new System.Windows.Forms.Padding(5, 7, 5, 7);
@@ -81,6 +85,9 @@
             // 
             // txt_TenSanPham
             // 
+            this.txt_TenSanPham.BackColor = System.Drawing.Color.Transparent;
+            this.txt_TenSanPham.BorderColor = System.Drawing.Color.White;
+            this.txt_TenSanPham.BorderRadius = 7;
             this.txt_TenSanPham.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txt_TenSanPham.DefaultText = "";
             this.txt_TenSanPham.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -89,6 +96,7 @@
             this.txt_TenSanPham.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txt_TenSanPham.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txt_TenSanPham.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.txt_TenSanPham.ForeColor = System.Drawing.Color.DarkBlue;
             this.txt_TenSanPham.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txt_TenSanPham.Location = new System.Drawing.Point(65, 169);
             this.txt_TenSanPham.Margin = new System.Windows.Forms.Padding(5, 7, 5, 7);
@@ -103,7 +111,7 @@
             this.lbl_TenSanPham.AutoSize = true;
             this.lbl_TenSanPham.BackColor = System.Drawing.Color.Transparent;
             this.lbl_TenSanPham.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.lbl_TenSanPham.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.lbl_TenSanPham.ForeColor = System.Drawing.Color.Navy;
             this.lbl_TenSanPham.Location = new System.Drawing.Point(60, 139);
             this.lbl_TenSanPham.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_TenSanPham.Name = "lbl_TenSanPham";
@@ -114,12 +122,14 @@
             // cbb_DanhMuc
             // 
             this.cbb_DanhMuc.BackColor = System.Drawing.Color.Transparent;
+            this.cbb_DanhMuc.BorderColor = System.Drawing.Color.White;
+            this.cbb_DanhMuc.BorderRadius = 7;
             this.cbb_DanhMuc.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.cbb_DanhMuc.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbb_DanhMuc.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.cbb_DanhMuc.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.cbb_DanhMuc.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.cbb_DanhMuc.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.cbb_DanhMuc.ForeColor = System.Drawing.Color.DarkBlue;
             this.cbb_DanhMuc.ItemHeight = 30;
             this.cbb_DanhMuc.Location = new System.Drawing.Point(65, 262);
             this.cbb_DanhMuc.Margin = new System.Windows.Forms.Padding(4);
@@ -132,7 +142,7 @@
             this.lbl_DanhMuc.AutoSize = true;
             this.lbl_DanhMuc.BackColor = System.Drawing.Color.Transparent;
             this.lbl_DanhMuc.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.lbl_DanhMuc.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.lbl_DanhMuc.ForeColor = System.Drawing.Color.Navy;
             this.lbl_DanhMuc.Location = new System.Drawing.Point(60, 233);
             this.lbl_DanhMuc.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_DanhMuc.Name = "lbl_DanhMuc";
@@ -145,7 +155,7 @@
             this.lbl_ThuongHieu.AutoSize = true;
             this.lbl_ThuongHieu.BackColor = System.Drawing.Color.Transparent;
             this.lbl_ThuongHieu.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.lbl_ThuongHieu.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.lbl_ThuongHieu.ForeColor = System.Drawing.Color.Navy;
             this.lbl_ThuongHieu.Location = new System.Drawing.Point(386, 232);
             this.lbl_ThuongHieu.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_ThuongHieu.Name = "lbl_ThuongHieu";
@@ -156,21 +166,26 @@
             // cbb_ThuongHieu
             // 
             this.cbb_ThuongHieu.BackColor = System.Drawing.Color.Transparent;
+            this.cbb_ThuongHieu.BorderColor = System.Drawing.Color.White;
+            this.cbb_ThuongHieu.BorderRadius = 7;
             this.cbb_ThuongHieu.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.cbb_ThuongHieu.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbb_ThuongHieu.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.cbb_ThuongHieu.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.cbb_ThuongHieu.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.cbb_ThuongHieu.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.cbb_ThuongHieu.ForeColor = System.Drawing.Color.DarkBlue;
             this.cbb_ThuongHieu.ItemHeight = 30;
             this.cbb_ThuongHieu.Location = new System.Drawing.Point(391, 262);
             this.cbb_ThuongHieu.Margin = new System.Windows.Forms.Padding(4);
             this.cbb_ThuongHieu.Name = "cbb_ThuongHieu";
-            this.cbb_ThuongHieu.Size = new System.Drawing.Size(219, 36);
+            this.cbb_ThuongHieu.Size = new System.Drawing.Size(225, 36);
             this.cbb_ThuongHieu.TabIndex = 6;
             // 
             // txt_DonGia
             // 
+            this.txt_DonGia.BackColor = System.Drawing.Color.Transparent;
+            this.txt_DonGia.BorderColor = System.Drawing.Color.White;
+            this.txt_DonGia.BorderRadius = 7;
             this.txt_DonGia.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txt_DonGia.DefaultText = "";
             this.txt_DonGia.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -179,6 +194,7 @@
             this.txt_DonGia.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txt_DonGia.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txt_DonGia.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.txt_DonGia.ForeColor = System.Drawing.Color.DarkBlue;
             this.txt_DonGia.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txt_DonGia.Location = new System.Drawing.Point(391, 81);
             this.txt_DonGia.Margin = new System.Windows.Forms.Padding(5, 7, 5, 7);
@@ -193,7 +209,7 @@
             this.lbl_DonGia.AutoSize = true;
             this.lbl_DonGia.BackColor = System.Drawing.Color.Transparent;
             this.lbl_DonGia.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.lbl_DonGia.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.lbl_DonGia.ForeColor = System.Drawing.Color.Navy;
             this.lbl_DonGia.Location = new System.Drawing.Point(385, 52);
             this.lbl_DonGia.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_DonGia.Name = "lbl_DonGia";
@@ -203,33 +219,37 @@
             // 
             // btn_Luu
             // 
+            this.btn_Luu.BorderRadius = 7;
             this.btn_Luu.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btn_Luu.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btn_Luu.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btn_Luu.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btn_Luu.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btn_Luu.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.btn_Luu.ForeColor = System.Drawing.Color.White;
-            this.btn_Luu.Location = new System.Drawing.Point(539, 336);
+            this.btn_Luu.Location = new System.Drawing.Point(536, 336);
             this.btn_Luu.Margin = new System.Windows.Forms.Padding(4);
             this.btn_Luu.Name = "btn_Luu";
-            this.btn_Luu.Size = new System.Drawing.Size(117, 46);
+            this.btn_Luu.Size = new System.Drawing.Size(126, 46);
             this.btn_Luu.TabIndex = 12;
             this.btn_Luu.Text = "Lưu";
             this.btn_Luu.Click += new System.EventHandler(this.btn_Luu_Click);
             // 
             // btn_Huy
             // 
+            this.btn_Huy.BackColor = System.Drawing.Color.Transparent;
+            this.btn_Huy.BorderColor = System.Drawing.Color.Red;
+            this.btn_Huy.BorderRadius = 10;
             this.btn_Huy.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btn_Huy.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btn_Huy.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btn_Huy.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btn_Huy.FillColor = System.Drawing.Color.Red;
-            this.btn_Huy.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btn_Huy.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.btn_Huy.ForeColor = System.Drawing.Color.White;
             this.btn_Huy.Location = new System.Drawing.Point(390, 336);
             this.btn_Huy.Margin = new System.Windows.Forms.Padding(4);
             this.btn_Huy.Name = "btn_Huy";
-            this.btn_Huy.Size = new System.Drawing.Size(123, 46);
+            this.btn_Huy.Size = new System.Drawing.Size(129, 46);
             this.btn_Huy.TabIndex = 13;
             this.btn_Huy.Text = "Hủy";
             this.btn_Huy.Click += new System.EventHandler(this.btn_Huy_Click);
@@ -239,7 +259,7 @@
             this.lbl_SoLuong.AutoSize = true;
             this.lbl_SoLuong.BackColor = System.Drawing.Color.Transparent;
             this.lbl_SoLuong.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.lbl_SoLuong.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.lbl_SoLuong.ForeColor = System.Drawing.Color.Navy;
             this.lbl_SoLuong.Location = new System.Drawing.Point(390, 139);
             this.lbl_SoLuong.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_SoLuong.Name = "lbl_SoLuong";
@@ -250,9 +270,12 @@
             // num_SoLuong
             // 
             this.num_SoLuong.BackColor = System.Drawing.Color.Transparent;
+            this.num_SoLuong.BorderColor = System.Drawing.Color.White;
+            this.num_SoLuong.BorderRadius = 7;
             this.num_SoLuong.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.num_SoLuong.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.num_SoLuong.Location = new System.Drawing.Point(391, 169);
+            this.num_SoLuong.ForeColor = System.Drawing.Color.DarkBlue;
+            this.num_SoLuong.Location = new System.Drawing.Point(395, 169);
             this.num_SoLuong.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.num_SoLuong.Name = "num_SoLuong";
             this.num_SoLuong.Size = new System.Drawing.Size(267, 44);
@@ -260,17 +283,18 @@
             // 
             // btn_ThemThuongHieuMoi
             // 
+            this.btn_ThemThuongHieuMoi.BorderRadius = 10;
             this.btn_ThemThuongHieuMoi.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btn_ThemThuongHieuMoi.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btn_ThemThuongHieuMoi.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btn_ThemThuongHieuMoi.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btn_ThemThuongHieuMoi.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.btn_ThemThuongHieuMoi.ForeColor = System.Drawing.Color.White;
-            this.btn_ThemThuongHieuMoi.Location = new System.Drawing.Point(617, 262);
+            this.btn_ThemThuongHieuMoi.Image = global::QLShopCauLong.Properties.Resources.plus_symbol_button_recolored;
+            this.btn_ThemThuongHieuMoi.Location = new System.Drawing.Point(623, 262);
             this.btn_ThemThuongHieuMoi.Name = "btn_ThemThuongHieuMoi";
-            this.btn_ThemThuongHieuMoi.Size = new System.Drawing.Size(41, 36);
+            this.btn_ThemThuongHieuMoi.Size = new System.Drawing.Size(39, 36);
             this.btn_ThemThuongHieuMoi.TabIndex = 19;
-            this.btn_ThemThuongHieuMoi.Text = "+";
             this.btn_ThemThuongHieuMoi.Click += new System.EventHandler(this.btn_ThemThuongHieuMoi_Click);
             // 
             // SanPham_ThemSua

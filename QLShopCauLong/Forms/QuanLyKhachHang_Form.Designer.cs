@@ -28,18 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle19 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle20 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle27 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle21 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle22 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle23 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle24 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle25 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle26 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dgv_KhachHang = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.col_MaKhachHang = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.col_HoTen = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.col_SDT = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.col_Email = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.col_DiaChi = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TongSoHoaDonMua = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.col_Sua = new System.Windows.Forms.DataGridViewImageColumn();
-            this.col_Xoa = new System.Windows.Forms.DataGridViewImageColumn();
             this.btn_ThongKe = new Guna.UI2.WinForms.Guna2Button();
             this.btn_NhaCungCap = new Guna.UI2.WinForms.Guna2Button();
             this.btn_NhanVien = new Guna.UI2.WinForms.Guna2Button();
@@ -57,6 +55,14 @@
             this.CirPic_Admin = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.btn_TrangChu = new Guna.UI2.WinForms.Guna2Button();
             this.panel_Menu = new Guna.UI2.WinForms.Guna2Panel();
+            this.col_MaKhachHang = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.col_HoTen = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.col_SDT = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.col_Email = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.col_DiaChi = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TongSoHoaDonMua = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.col_Sua = new System.Windows.Forms.DataGridViewImageColumn();
+            this.col_Xoa = new System.Windows.Forms.DataGridViewImageColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_KhachHang)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.CirPic_Admin)).BeginInit();
             this.panel_Menu.SuspendLayout();
@@ -66,16 +72,16 @@
             // 
             this.dgv_KhachHang.AllowUserToAddRows = false;
             this.dgv_KhachHang.AllowUserToResizeRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.dgv_KhachHang.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgv_KhachHang.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle19.BackColor = System.Drawing.Color.White;
+            this.dgv_KhachHang.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle19;
+            dataGridViewCellStyle20.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle20.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            dataGridViewCellStyle20.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle20.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle20.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle20.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle20.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgv_KhachHang.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle20;
             this.dgv_KhachHang.ColumnHeadersHeight = 40;
             this.dgv_KhachHang.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.col_MaKhachHang,
@@ -86,14 +92,14 @@
             this.TongSoHoaDonMua,
             this.col_Sua,
             this.col_Xoa});
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgv_KhachHang.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle27.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle27.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle27.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle27.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            dataGridViewCellStyle27.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle27.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle27.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgv_KhachHang.DefaultCellStyle = dataGridViewCellStyle27;
             this.dgv_KhachHang.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dgv_KhachHang.Location = new System.Drawing.Point(298, 214);
             this.dgv_KhachHang.Margin = new System.Windows.Forms.Padding(4);
@@ -111,78 +117,6 @@
             this.dgv_KhachHang.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dgv_KhachHang.ThemeStyle.RowsStyle.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.dgv_KhachHang.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_QuanLyKhachHang_CellClick);
-            // 
-            // col_MaKhachHang
-            // 
-            this.col_MaKhachHang.DataPropertyName = "MaKhachHang";
-            this.col_MaKhachHang.FillWeight = 107.9645F;
-            this.col_MaKhachHang.HeaderText = "Mã khách hàng";
-            this.col_MaKhachHang.MinimumWidth = 6;
-            this.col_MaKhachHang.Name = "col_MaKhachHang";
-            this.col_MaKhachHang.ReadOnly = true;
-            // 
-            // col_HoTen
-            // 
-            this.col_HoTen.DataPropertyName = "HoTen";
-            this.col_HoTen.FillWeight = 157.2356F;
-            this.col_HoTen.HeaderText = "Họ tên";
-            this.col_HoTen.MinimumWidth = 6;
-            this.col_HoTen.Name = "col_HoTen";
-            this.col_HoTen.ReadOnly = true;
-            // 
-            // col_SDT
-            // 
-            this.col_SDT.DataPropertyName = "SoDienThoai";
-            this.col_SDT.FillWeight = 107.9645F;
-            this.col_SDT.HeaderText = "SĐT";
-            this.col_SDT.MinimumWidth = 6;
-            this.col_SDT.Name = "col_SDT";
-            this.col_SDT.ReadOnly = true;
-            // 
-            // col_Email
-            // 
-            this.col_Email.DataPropertyName = "Email";
-            this.col_Email.FillWeight = 119.7163F;
-            this.col_Email.HeaderText = "Email";
-            this.col_Email.MinimumWidth = 6;
-            this.col_Email.Name = "col_Email";
-            this.col_Email.ReadOnly = true;
-            // 
-            // col_DiaChi
-            // 
-            this.col_DiaChi.DataPropertyName = "DiaChi";
-            this.col_DiaChi.FillWeight = 121.8274F;
-            this.col_DiaChi.HeaderText = "Địa chỉ";
-            this.col_DiaChi.MinimumWidth = 6;
-            this.col_DiaChi.Name = "col_DiaChi";
-            this.col_DiaChi.ReadOnly = true;
-            // 
-            // TongSoHoaDonMua
-            // 
-            this.TongSoHoaDonMua.DataPropertyName = "col_TongSoHoaDonMua";
-            this.TongSoHoaDonMua.HeaderText = "Tổng số hóa đơn mua";
-            this.TongSoHoaDonMua.MinimumWidth = 6;
-            this.TongSoHoaDonMua.Name = "TongSoHoaDonMua";
-            // 
-            // col_Sua
-            // 
-            this.col_Sua.FillWeight = 40.5192F;
-            this.col_Sua.HeaderText = "Sửa";
-            this.col_Sua.Image = global::QLShopCauLong.Properties.Resources.edit;
-            this.col_Sua.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
-            this.col_Sua.MinimumWidth = 6;
-            this.col_Sua.Name = "col_Sua";
-            this.col_Sua.ReadOnly = true;
-            // 
-            // col_Xoa
-            // 
-            this.col_Xoa.FillWeight = 36.80783F;
-            this.col_Xoa.HeaderText = "Xóa";
-            this.col_Xoa.Image = global::QLShopCauLong.Properties.Resources.bin;
-            this.col_Xoa.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
-            this.col_Xoa.MinimumWidth = 6;
-            this.col_Xoa.Name = "col_Xoa";
-            this.col_Xoa.ReadOnly = true;
             // 
             // btn_ThongKe
             // 
@@ -313,15 +247,15 @@
             this.btn_ThemKhachHang.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btn_ThemKhachHang.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btn_ThemKhachHang.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.btn_ThemKhachHang.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_ThemKhachHang.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.btn_ThemKhachHang.ForeColor = System.Drawing.Color.White;
-            this.btn_ThemKhachHang.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btn_ThemKhachHang.Location = new System.Drawing.Point(1066, 149);
+            this.btn_ThemKhachHang.Image = global::QLShopCauLong.Properties.Resources.plus_symbol_button_recolored;
+            this.btn_ThemKhachHang.Location = new System.Drawing.Point(1054, 149);
             this.btn_ThemKhachHang.Margin = new System.Windows.Forms.Padding(4);
             this.btn_ThemKhachHang.Name = "btn_ThemKhachHang";
-            this.btn_ThemKhachHang.Size = new System.Drawing.Size(223, 44);
+            this.btn_ThemKhachHang.Size = new System.Drawing.Size(235, 44);
             this.btn_ThemKhachHang.TabIndex = 32;
-            this.btn_ThemKhachHang.Text = "+   Thêm khách hàng";
+            this.btn_ThemKhachHang.Text = "Thêm khách hàng";
             this.btn_ThemKhachHang.Click += new System.EventHandler(this.btn_ThemKhachHang_Click);
             // 
             // txt_KhachHang
@@ -336,6 +270,7 @@
             this.txt_KhachHang.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txt_KhachHang.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txt_KhachHang.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_KhachHang.ForeColor = System.Drawing.Color.Black;
             this.txt_KhachHang.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txt_KhachHang.IconRight = global::QLShopCauLong.Properties.Resources.timkiem;
             this.txt_KhachHang.Location = new System.Drawing.Point(295, 145);
@@ -497,6 +432,104 @@
             this.panel_Menu.Name = "panel_Menu";
             this.panel_Menu.Size = new System.Drawing.Size(243, 481);
             this.panel_Menu.TabIndex = 24;
+            // 
+            // col_MaKhachHang
+            // 
+            this.col_MaKhachHang.DataPropertyName = "MaKhachHang";
+            dataGridViewCellStyle21.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle21.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.col_MaKhachHang.DefaultCellStyle = dataGridViewCellStyle21;
+            this.col_MaKhachHang.DividerWidth = 1;
+            this.col_MaKhachHang.FillWeight = 107.9645F;
+            this.col_MaKhachHang.HeaderText = "Mã khách hàng";
+            this.col_MaKhachHang.MinimumWidth = 6;
+            this.col_MaKhachHang.Name = "col_MaKhachHang";
+            this.col_MaKhachHang.ReadOnly = true;
+            // 
+            // col_HoTen
+            // 
+            this.col_HoTen.DataPropertyName = "HoTen";
+            dataGridViewCellStyle22.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle22.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.col_HoTen.DefaultCellStyle = dataGridViewCellStyle22;
+            this.col_HoTen.DividerWidth = 1;
+            this.col_HoTen.FillWeight = 157.2356F;
+            this.col_HoTen.HeaderText = "Họ tên";
+            this.col_HoTen.MinimumWidth = 6;
+            this.col_HoTen.Name = "col_HoTen";
+            this.col_HoTen.ReadOnly = true;
+            // 
+            // col_SDT
+            // 
+            this.col_SDT.DataPropertyName = "SoDienThoai";
+            dataGridViewCellStyle23.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle23.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.col_SDT.DefaultCellStyle = dataGridViewCellStyle23;
+            this.col_SDT.DividerWidth = 1;
+            this.col_SDT.FillWeight = 107.9645F;
+            this.col_SDT.HeaderText = "SĐT";
+            this.col_SDT.MinimumWidth = 6;
+            this.col_SDT.Name = "col_SDT";
+            this.col_SDT.ReadOnly = true;
+            // 
+            // col_Email
+            // 
+            this.col_Email.DataPropertyName = "Email";
+            dataGridViewCellStyle24.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle24.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.col_Email.DefaultCellStyle = dataGridViewCellStyle24;
+            this.col_Email.DividerWidth = 1;
+            this.col_Email.FillWeight = 119.7163F;
+            this.col_Email.HeaderText = "Email";
+            this.col_Email.MinimumWidth = 6;
+            this.col_Email.Name = "col_Email";
+            this.col_Email.ReadOnly = true;
+            // 
+            // col_DiaChi
+            // 
+            this.col_DiaChi.DataPropertyName = "DiaChi";
+            dataGridViewCellStyle25.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle25.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.col_DiaChi.DefaultCellStyle = dataGridViewCellStyle25;
+            this.col_DiaChi.DividerWidth = 1;
+            this.col_DiaChi.FillWeight = 121.8274F;
+            this.col_DiaChi.HeaderText = "Địa chỉ";
+            this.col_DiaChi.MinimumWidth = 6;
+            this.col_DiaChi.Name = "col_DiaChi";
+            this.col_DiaChi.ReadOnly = true;
+            // 
+            // TongSoHoaDonMua
+            // 
+            this.TongSoHoaDonMua.DataPropertyName = "col_TongSoHoaDonMua";
+            dataGridViewCellStyle26.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle26.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.TongSoHoaDonMua.DefaultCellStyle = dataGridViewCellStyle26;
+            this.TongSoHoaDonMua.DividerWidth = 1;
+            this.TongSoHoaDonMua.HeaderText = "Tổng số hóa đơn mua";
+            this.TongSoHoaDonMua.MinimumWidth = 6;
+            this.TongSoHoaDonMua.Name = "TongSoHoaDonMua";
+            // 
+            // col_Sua
+            // 
+            this.col_Sua.DividerWidth = 1;
+            this.col_Sua.FillWeight = 40.5192F;
+            this.col_Sua.HeaderText = "Sửa";
+            this.col_Sua.Image = global::QLShopCauLong.Properties.Resources.edit;
+            this.col_Sua.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
+            this.col_Sua.MinimumWidth = 6;
+            this.col_Sua.Name = "col_Sua";
+            this.col_Sua.ReadOnly = true;
+            // 
+            // col_Xoa
+            // 
+            this.col_Xoa.DividerWidth = 1;
+            this.col_Xoa.FillWeight = 36.80783F;
+            this.col_Xoa.HeaderText = "Xóa";
+            this.col_Xoa.Image = global::QLShopCauLong.Properties.Resources.delete;
+            this.col_Xoa.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
+            this.col_Xoa.MinimumWidth = 6;
+            this.col_Xoa.Name = "col_Xoa";
+            this.col_Xoa.ReadOnly = true;
             // 
             // QuanLyKhachHang_Form
             // 

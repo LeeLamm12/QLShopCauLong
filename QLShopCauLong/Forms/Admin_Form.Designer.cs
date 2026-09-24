@@ -368,7 +368,7 @@
             this.panel_MiniTongSoSanPham.BorderRadius = 10;
             this.panel_MiniTongSoSanPham.BorderThickness = 2;
             this.panel_MiniTongSoSanPham.Controls.Add(this.pic_TongSoSanPham);
-            this.panel_MiniTongSoSanPham.FillColor = System.Drawing.Color.Blue;
+            this.panel_MiniTongSoSanPham.FillColor = System.Drawing.Color.Orange;
             this.panel_MiniTongSoSanPham.ForeColor = System.Drawing.Color.Transparent;
             this.panel_MiniTongSoSanPham.Location = new System.Drawing.Point(13, 12);
             this.panel_MiniTongSoSanPham.Name = "panel_MiniTongSoSanPham";
@@ -377,25 +377,30 @@
             // 
             // pic_TongSoSanPham
             // 
+            this.pic_TongSoSanPham.Image = global::QLShopCauLong.Properties.Resources.box_recolored1;
             this.pic_TongSoSanPham.ImageRotate = 0F;
-            this.pic_TongSoSanPham.Location = new System.Drawing.Point(12, 16);
+            this.pic_TongSoSanPham.Location = new System.Drawing.Point(14, 13);
             this.pic_TongSoSanPham.Name = "pic_TongSoSanPham";
             this.pic_TongSoSanPham.Size = new System.Drawing.Size(43, 42);
+            this.pic_TongSoSanPham.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pic_TongSoSanPham.TabIndex = 0;
             this.pic_TongSoSanPham.TabStop = false;
             // 
             // txt_TongSoSanPham
             // 
+            this.txt_TongSoSanPham.BorderColor = System.Drawing.Color.WhiteSmoke;
             this.txt_TongSoSanPham.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txt_TongSoSanPham.DefaultText = "";
             this.txt_TongSoSanPham.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.txt_TongSoSanPham.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.txt_TongSoSanPham.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txt_TongSoSanPham.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_TongSoSanPham.FillColor = System.Drawing.Color.WhiteSmoke;
             this.txt_TongSoSanPham.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_TongSoSanPham.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txt_TongSoSanPham.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.txt_TongSoSanPham.ForeColor = System.Drawing.Color.DarkBlue;
             this.txt_TongSoSanPham.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_TongSoSanPham.Location = new System.Drawing.Point(102, 40);
+            this.txt_TongSoSanPham.Location = new System.Drawing.Point(86, 40);
             this.txt_TongSoSanPham.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txt_TongSoSanPham.Name = "txt_TongSoSanPham";
             this.txt_TongSoSanPham.PlaceholderText = "";
@@ -408,12 +413,12 @@
             // 
             this.lbl_TongSoSanPham.AutoSize = true;
             this.lbl_TongSoSanPham.BackColor = System.Drawing.Color.Transparent;
-            this.lbl_TongSoSanPham.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_TongSoSanPham.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.lbl_TongSoSanPham.ForeColor = System.Drawing.Color.Navy;
-            this.lbl_TongSoSanPham.Location = new System.Drawing.Point(98, 12);
+            this.lbl_TongSoSanPham.Location = new System.Drawing.Point(85, 12);
             this.lbl_TongSoSanPham.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_TongSoSanPham.Name = "lbl_TongSoSanPham";
-            this.lbl_TongSoSanPham.Size = new System.Drawing.Size(122, 19);
+            this.lbl_TongSoSanPham.Size = new System.Drawing.Size(155, 23);
             this.lbl_TongSoSanPham.TabIndex = 23;
             this.lbl_TongSoSanPham.Text = "Tổng số sản phẩm";
             // 
@@ -447,25 +452,30 @@
             // 
             // pic_TongSoHoaDon
             // 
+            this.pic_TongSoHoaDon.Image = global::QLShopCauLong.Properties.Resources.bill__1__recolored;
             this.pic_TongSoHoaDon.ImageRotate = 0F;
-            this.pic_TongSoHoaDon.Location = new System.Drawing.Point(12, 16);
+            this.pic_TongSoHoaDon.Location = new System.Drawing.Point(11, 11);
             this.pic_TongSoHoaDon.Name = "pic_TongSoHoaDon";
-            this.pic_TongSoHoaDon.Size = new System.Drawing.Size(43, 42);
+            this.pic_TongSoHoaDon.Size = new System.Drawing.Size(49, 46);
+            this.pic_TongSoHoaDon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pic_TongSoHoaDon.TabIndex = 0;
             this.pic_TongSoHoaDon.TabStop = false;
             // 
             // txt_TongSoHoaDon
             // 
+            this.txt_TongSoHoaDon.BorderColor = System.Drawing.Color.WhiteSmoke;
             this.txt_TongSoHoaDon.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txt_TongSoHoaDon.DefaultText = "";
             this.txt_TongSoHoaDon.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.txt_TongSoHoaDon.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.txt_TongSoHoaDon.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txt_TongSoHoaDon.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_TongSoHoaDon.FillColor = System.Drawing.Color.WhiteSmoke;
             this.txt_TongSoHoaDon.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_TongSoHoaDon.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txt_TongSoHoaDon.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.txt_TongSoHoaDon.ForeColor = System.Drawing.Color.DarkBlue;
             this.txt_TongSoHoaDon.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_TongSoHoaDon.Location = new System.Drawing.Point(102, 40);
+            this.txt_TongSoHoaDon.Location = new System.Drawing.Point(86, 40);
             this.txt_TongSoHoaDon.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txt_TongSoHoaDon.Name = "txt_TongSoHoaDon";
             this.txt_TongSoHoaDon.PlaceholderText = "";
@@ -478,12 +488,12 @@
             // 
             this.lbl_TongSoHoaDon.AutoSize = true;
             this.lbl_TongSoHoaDon.BackColor = System.Drawing.Color.Transparent;
-            this.lbl_TongSoHoaDon.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_TongSoHoaDon.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.lbl_TongSoHoaDon.ForeColor = System.Drawing.Color.Navy;
-            this.lbl_TongSoHoaDon.Location = new System.Drawing.Point(98, 12);
+            this.lbl_TongSoHoaDon.Location = new System.Drawing.Point(86, 12);
             this.lbl_TongSoHoaDon.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_TongSoHoaDon.Name = "lbl_TongSoHoaDon";
-            this.lbl_TongSoHoaDon.Size = new System.Drawing.Size(113, 19);
+            this.lbl_TongSoHoaDon.Size = new System.Drawing.Size(144, 23);
             this.lbl_TongSoHoaDon.TabIndex = 23;
             this.lbl_TongSoHoaDon.Text = "Tổng số hóa đơn";
             // 
@@ -509,7 +519,7 @@
             this.panel_MiniTongDoanhThu.BorderRadius = 10;
             this.panel_MiniTongDoanhThu.BorderThickness = 2;
             this.panel_MiniTongDoanhThu.Controls.Add(this.pic_TongDoanhThu);
-            this.panel_MiniTongDoanhThu.FillColor = System.Drawing.Color.Blue;
+            this.panel_MiniTongDoanhThu.FillColor = System.Drawing.Color.Lime;
             this.panel_MiniTongDoanhThu.ForeColor = System.Drawing.Color.Transparent;
             this.panel_MiniTongDoanhThu.Location = new System.Drawing.Point(13, 12);
             this.panel_MiniTongDoanhThu.Name = "panel_MiniTongDoanhThu";
@@ -518,27 +528,33 @@
             // 
             // pic_TongDoanhThu
             // 
+            this.pic_TongDoanhThu.Image = global::QLShopCauLong.Properties.Resources.dollar__1__recolored;
             this.pic_TongDoanhThu.ImageRotate = 0F;
-            this.pic_TongDoanhThu.Location = new System.Drawing.Point(12, 16);
+            this.pic_TongDoanhThu.Location = new System.Drawing.Point(14, 15);
             this.pic_TongDoanhThu.Name = "pic_TongDoanhThu";
-            this.pic_TongDoanhThu.Size = new System.Drawing.Size(43, 42);
+            this.pic_TongDoanhThu.Size = new System.Drawing.Size(43, 41);
+            this.pic_TongDoanhThu.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pic_TongDoanhThu.TabIndex = 0;
             this.pic_TongDoanhThu.TabStop = false;
             // 
             // txt_TongDoanhThu
             // 
+            this.txt_TongDoanhThu.BorderColor = System.Drawing.Color.WhiteSmoke;
             this.txt_TongDoanhThu.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txt_TongDoanhThu.DefaultText = "";
             this.txt_TongDoanhThu.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.txt_TongDoanhThu.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
             this.txt_TongDoanhThu.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txt_TongDoanhThu.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_TongDoanhThu.FillColor = System.Drawing.Color.WhiteSmoke;
             this.txt_TongDoanhThu.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_TongDoanhThu.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txt_TongDoanhThu.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.txt_TongDoanhThu.ForeColor = System.Drawing.Color.DarkBlue;
             this.txt_TongDoanhThu.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_TongDoanhThu.Location = new System.Drawing.Point(102, 40);
+            this.txt_TongDoanhThu.Location = new System.Drawing.Point(86, 40);
             this.txt_TongDoanhThu.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txt_TongDoanhThu.Name = "txt_TongDoanhThu";
+            this.txt_TongDoanhThu.PlaceholderForeColor = System.Drawing.Color.Transparent;
             this.txt_TongDoanhThu.PlaceholderText = "";
             this.txt_TongDoanhThu.ReadOnly = true;
             this.txt_TongDoanhThu.SelectedText = "";
@@ -549,12 +565,12 @@
             // 
             this.lbl_TongDoanhThu.AutoSize = true;
             this.lbl_TongDoanhThu.BackColor = System.Drawing.Color.Transparent;
-            this.lbl_TongDoanhThu.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_TongDoanhThu.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.lbl_TongDoanhThu.ForeColor = System.Drawing.Color.Navy;
-            this.lbl_TongDoanhThu.Location = new System.Drawing.Point(98, 12);
+            this.lbl_TongDoanhThu.Location = new System.Drawing.Point(86, 12);
             this.lbl_TongDoanhThu.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_TongDoanhThu.Name = "lbl_TongDoanhThu";
-            this.lbl_TongDoanhThu.Size = new System.Drawing.Size(108, 19);
+            this.lbl_TongDoanhThu.Size = new System.Drawing.Size(138, 23);
             this.lbl_TongDoanhThu.TabIndex = 23;
             this.lbl_TongDoanhThu.Text = "Tổng doanh thu";
             // 
@@ -585,6 +601,7 @@
             // FlowPanel_NhanVien
             // 
             this.FlowPanel_NhanVien.AutoScroll = true;
+            this.FlowPanel_NhanVien.BackColor = System.Drawing.Color.WhiteSmoke;
             this.FlowPanel_NhanVien.Dock = System.Windows.Forms.DockStyle.Fill;
             this.FlowPanel_NhanVien.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
             this.FlowPanel_NhanVien.Location = new System.Drawing.Point(0, 0);
@@ -592,6 +609,7 @@
             this.FlowPanel_NhanVien.Size = new System.Drawing.Size(488, 319);
             this.FlowPanel_NhanVien.TabIndex = 0;
             this.FlowPanel_NhanVien.WrapContents = false;
+            this.FlowPanel_NhanVien.Paint += new System.Windows.Forms.PaintEventHandler(this.FlowPanel_NhanVien_Paint);
             // 
             // Admin_Form
             // 

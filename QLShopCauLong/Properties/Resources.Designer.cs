@@ -73,6 +73,16 @@ namespace QLShopCauLong.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap account_recolored_recolored {
+            get {
+                object obj = ResourceManager.GetObject("account-recolored-recolored", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap account_recolored1 {
             get {
                 object obj = ResourceManager.GetObject("account-recolored1", resourceCulture);
@@ -143,6 +153,16 @@ namespace QLShopCauLong.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap bill__1__recolored {
+            get {
+                object obj = ResourceManager.GetObject("bill (1)-recolored", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap bill_recolored {
             get {
                 object obj = ResourceManager.GetObject("bill-recolored", resourceCulture);
@@ -166,6 +186,16 @@ namespace QLShopCauLong.Properties {
         internal static System.Drawing.Bitmap box_recolored {
             get {
                 object obj = ResourceManager.GetObject("box-recolored", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap box_recolored1 {
+            get {
+                object obj = ResourceManager.GetObject("box-recolored1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -223,9 +253,59 @@ namespace QLShopCauLong.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap database {
+            get {
+                object obj = ResourceManager.GetObject("database", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap database_recolored {
+            get {
+                object obj = ResourceManager.GetObject("database-recolored", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap delete {
+            get {
+                object obj = ResourceManager.GetObject("delete", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap delivery_truck_recolored {
             get {
                 object obj = ResourceManager.GetObject("delivery-truck-recolored", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap dollar__1_ {
+            get {
+                object obj = ResourceManager.GetObject("dollar (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap dollar__1__recolored {
+            get {
+                object obj = ResourceManager.GetObject("dollar (1)-recolored", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -533,6 +613,56 @@ namespace QLShopCauLong.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap plus {
+            get {
+                object obj = ResourceManager.GetObject("plus", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap plus_sign {
+            get {
+                object obj = ResourceManager.GetObject("plus-sign", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap plus_symbol_button {
+            get {
+                object obj = ResourceManager.GetObject("plus-symbol-button", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap plus_symbol_button_recolored {
+            get {
+                object obj = ResourceManager.GetObject("plus-symbol-button-recolored", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap printer {
+            get {
+                object obj = ResourceManager.GetObject("printer", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap quanly {
             get {
                 object obj = ResourceManager.GetObject("quanly", resourceCulture);
@@ -546,6 +676,16 @@ namespace QLShopCauLong.Properties {
         internal static System.Drawing.Bitmap quanlytk {
             get {
                 object obj = ResourceManager.GetObject("quanlytk", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap revenue {
+            get {
+                object obj = ResourceManager.GetObject("revenue", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -616,6 +756,16 @@ namespace QLShopCauLong.Properties {
         internal static System.Drawing.Bitmap user1 {
             get {
                 object obj = ResourceManager.GetObject("user1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap view {
+            get {
+                object obj = ResourceManager.GetObject("view", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -30,7 +30,13 @@
         {
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             this.lbl_TenNguoiDung = new System.Windows.Forms.Label();
             this.CirPic_Admin = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.panel_Menu = new Guna.UI2.WinForms.Guna2Panel();
@@ -306,6 +312,7 @@
             this.txt_NhanVien.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txt_NhanVien.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txt_NhanVien.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_NhanVien.ForeColor = System.Drawing.Color.Black;
             this.txt_NhanVien.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txt_NhanVien.IconRight = global::QLShopCauLong.Properties.Resources.timkiem;
             this.txt_NhanVien.Location = new System.Drawing.Point(295, 145);
@@ -365,15 +372,15 @@
             this.btn_ThemNhanVien.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btn_ThemNhanVien.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btn_ThemNhanVien.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.btn_ThemNhanVien.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_ThemNhanVien.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.btn_ThemNhanVien.ForeColor = System.Drawing.Color.White;
-            this.btn_ThemNhanVien.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btn_ThemNhanVien.Location = new System.Drawing.Point(1066, 149);
+            this.btn_ThemNhanVien.Image = global::QLShopCauLong.Properties.Resources.plus_symbol_button_recolored;
+            this.btn_ThemNhanVien.Location = new System.Drawing.Point(1056, 149);
             this.btn_ThemNhanVien.Margin = new System.Windows.Forms.Padding(4);
             this.btn_ThemNhanVien.Name = "btn_ThemNhanVien";
-            this.btn_ThemNhanVien.Size = new System.Drawing.Size(223, 44);
+            this.btn_ThemNhanVien.Size = new System.Drawing.Size(233, 44);
             this.btn_ThemNhanVien.TabIndex = 42;
-            this.btn_ThemNhanVien.Text = "+   Thêm nhân viên";
+            this.btn_ThemNhanVien.Text = "Thêm nhân viên";
             this.btn_ThemNhanVien.Click += new System.EventHandler(this.btn_ThemNhanVien_Click);
             // 
             // dgv_NhanVien
@@ -400,14 +407,14 @@
             this.col_NgayVaoLam,
             this.col_Sua,
             this.col_Xoa});
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgv_NhanVien.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle9.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgv_NhanVien.DefaultCellStyle = dataGridViewCellStyle9;
             this.dgv_NhanVien.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dgv_NhanVien.Location = new System.Drawing.Point(298, 214);
             this.dgv_NhanVien.Margin = new System.Windows.Forms.Padding(4);
@@ -429,6 +436,10 @@
             // col_MaNhanVien
             // 
             this.col_MaNhanVien.DataPropertyName = "MaNhanVien";
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.col_MaNhanVien.DefaultCellStyle = dataGridViewCellStyle3;
+            this.col_MaNhanVien.DividerWidth = 1;
             this.col_MaNhanVien.FillWeight = 107.9645F;
             this.col_MaNhanVien.HeaderText = "Mã nhân viên";
             this.col_MaNhanVien.MinimumWidth = 6;
@@ -438,6 +449,10 @@
             // col_HoTen
             // 
             this.col_HoTen.DataPropertyName = "HoTen";
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.col_HoTen.DefaultCellStyle = dataGridViewCellStyle4;
+            this.col_HoTen.DividerWidth = 1;
             this.col_HoTen.FillWeight = 157.2356F;
             this.col_HoTen.HeaderText = "Họ tên";
             this.col_HoTen.MinimumWidth = 6;
@@ -447,6 +462,10 @@
             // col_ChucVu
             // 
             this.col_ChucVu.DataPropertyName = "ChucVu";
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.col_ChucVu.DefaultCellStyle = dataGridViewCellStyle5;
+            this.col_ChucVu.DividerWidth = 1;
             this.col_ChucVu.HeaderText = "Chức vụ";
             this.col_ChucVu.MinimumWidth = 6;
             this.col_ChucVu.Name = "col_ChucVu";
@@ -455,6 +474,10 @@
             // col_SDT
             // 
             this.col_SDT.DataPropertyName = "SoDienThoai";
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.col_SDT.DefaultCellStyle = dataGridViewCellStyle6;
+            this.col_SDT.DividerWidth = 1;
             this.col_SDT.FillWeight = 107.9645F;
             this.col_SDT.HeaderText = "SĐT";
             this.col_SDT.MinimumWidth = 6;
@@ -464,6 +487,10 @@
             // col_Email
             // 
             this.col_Email.DataPropertyName = "Email";
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.col_Email.DefaultCellStyle = dataGridViewCellStyle7;
+            this.col_Email.DividerWidth = 1;
             this.col_Email.FillWeight = 119.7163F;
             this.col_Email.HeaderText = "Email";
             this.col_Email.MinimumWidth = 6;
@@ -473,6 +500,10 @@
             // col_NgayVaoLam
             // 
             this.col_NgayVaoLam.DataPropertyName = "NgayVaoLam";
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.col_NgayVaoLam.DefaultCellStyle = dataGridViewCellStyle8;
+            this.col_NgayVaoLam.DividerWidth = 1;
             this.col_NgayVaoLam.FillWeight = 121.8274F;
             this.col_NgayVaoLam.HeaderText = "Ngày vào làm";
             this.col_NgayVaoLam.MinimumWidth = 6;
@@ -481,6 +512,7 @@
             // 
             // col_Sua
             // 
+            this.col_Sua.DividerWidth = 1;
             this.col_Sua.FillWeight = 40.5192F;
             this.col_Sua.HeaderText = "Sửa";
             this.col_Sua.Image = global::QLShopCauLong.Properties.Resources.edit;
@@ -491,9 +523,10 @@
             // 
             // col_Xoa
             // 
+            this.col_Xoa.DividerWidth = 1;
             this.col_Xoa.FillWeight = 36.80783F;
             this.col_Xoa.HeaderText = "Xóa";
-            this.col_Xoa.Image = global::QLShopCauLong.Properties.Resources.bin;
+            this.col_Xoa.Image = global::QLShopCauLong.Properties.Resources.delete;
             this.col_Xoa.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
             this.col_Xoa.MinimumWidth = 6;
             this.col_Xoa.Name = "col_Xoa";

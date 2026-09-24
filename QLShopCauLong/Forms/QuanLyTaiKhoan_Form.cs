@@ -89,7 +89,7 @@ namespace QLShopCauLong.Forms
                 bool dangHoatDong = (tk?.TrangThai ?? true);
 
                 row.Cells["col_Sua"].Value = Properties.Resources.icon_sua;
-                row.Cells["col_Xoa"].Value = Properties.Resources.icon_xoa;
+                row.Cells["col_Xoa"].Value = Properties.Resources.delete;
                 row.Cells["col_Khoa"].Value = dangHoatDong
                     ? Properties.Resources.icon_khoa
                     : Properties.Resources.icon_mokhoa;

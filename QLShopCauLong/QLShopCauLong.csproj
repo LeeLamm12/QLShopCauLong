@@ -553,15 +553,29 @@
       <DependentUpon>QLShopCauLongModel.edmx</DependentUpon>
       <LastGenOutput>QLShopCauLongModel.cs</LastGenOutput>
     </Content>
+    <None Include="Resources\account-recolored-recolored.png" />
     <Content Include="Resources\aeronaut9000.jpg" />
     <Content Include="Resources\apacsfw55.jpg" />
     <Content Include="Resources\astrox100zz.jpg" />
     <Content Include="Resources\auraspeed90k.jpg" />
+    <None Include="Resources\dollar %281%29.png" />
+    <None Include="Resources\dollar %281%29-recolored.png" />
+    <None Include="Resources\bill %281%29-recolored.png" />
+    <None Include="Resources\delete.png" />
+    <None Include="Resources\database.png" />
+    <None Include="Resources\database-recolored.png" />
     <Content Include="Resources\duora10.jpg" />
     <Content Include="Resources\kumpoopc88.jpg" />
     <Content Include="Resources\nanoflare800.jpg" />
+    <None Include="Resources\revenue.png" />
+    <None Include="Resources\plus.png" />
+    <None Include="Resources\plus-sign.png" />
+    <None Include="Resources\plus-symbol-button.png" />
+    <None Include="Resources\plus-symbol-button-recolored.png" />
+    <None Include="Resources\printer.png" />
     <Content Include="Resources\thrusterkfalcon.jpg" />
     <Content Include="Resources\turbo75.jpg" />
+    <None Include="Resources\view.png" />
     <Content Include="Resources\windstorm72.jpg" />
     <None Include="Resources\nenphu5.png" />
     <None Include="Resources\bin.png" />

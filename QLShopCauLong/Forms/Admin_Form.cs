@@ -99,7 +99,7 @@ namespace QLShopCauLong.Forms
 
             // Dùng Bar chart — không bị lỗi khi ít điểm
             var bars = formsPlot_DoanhThu.Plot.Add.Bars(xs, ys);
-            bars.Color = ScottPlot.Color.FromHex("#3B82F6");
+            bars.Color = ScottPlot.Color.FromHex("#05c7f8");
 
             // Trục X
             formsPlot_DoanhThu.Plot.Axes.Bottom.SetTicks(xs, labels.ToArray());
@@ -108,10 +108,11 @@ namespace QLShopCauLong.Forms
             formsPlot_DoanhThu.Plot.Axes.Left.Min = 0;
 
             // Style dark
-            formsPlot_DoanhThu.Plot.FigureBackground.Color = ScottPlot.Color.FromHex("#1A1A2E");
-            formsPlot_DoanhThu.Plot.DataBackground.Color = ScottPlot.Color.FromHex("#1A1A2E");
-            formsPlot_DoanhThu.Plot.Axes.Color(ScottPlot.Color.FromHex("#8B8B9E"));
-            formsPlot_DoanhThu.Plot.Grid.MajorLineColor = ScottPlot.Color.FromHex("#2A2A3E");
+            formsPlot_DoanhThu.Plot.FigureBackground.Color = ScottPlot.Color.FromHex("#011f51");
+            formsPlot_DoanhThu.Plot.DataBackground.Color = ScottPlot.Color.FromHex("#011f51");
+
+            formsPlot_DoanhThu.Plot.Axes.Color(ScottPlot.Color.FromHex("#f0f1f5"));
+            formsPlot_DoanhThu.Plot.Grid.MajorLineColor = ScottPlot.Color.FromHex("#0c2f65");
 
             formsPlot_DoanhThu.Refresh();
         }
@@ -209,6 +210,11 @@ namespace QLShopCauLong.Forms
             Application.Exit();
         }
     }
+        }
+
+        private void FlowPanel_NhanVien_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }
