@@ -14,14 +14,16 @@ namespace QLShopCauLong.BLL
         public List<NhanVien> LayDanhSach() => dal.LayDanhSach();
         public NhanVien LayTheoMa(string ma) => dal.LayTheoMa(ma);
 
-        public List<string> Validate(NhanVien nv, bool laThemMoi)
+        public List<string> Validate(NhanVien nv, bool laThemMoi, string maNVLoaiTru = null)
         {
             var loi = new List<string>();
             if (ValidationHelper.IsNullOrEmpty(nv.MaNhanVien))
                 loi.Add("Mã nhân viên không được để trống.");
             if (ValidationHelper.IsNullOrEmpty(nv.HoTen))
                 loi.Add("Họ tên không được để trống.");
-            if (!ValidationHelper.IsValidPhone(nv.SoDienThoai))
+            if (string.IsNullOrWhiteSpace(nv.SoDienThoai))
+                loi.Add("Số điện thoại không được để trống.");
+            else if (!ValidationHelper.IsValidPhone(nv.SoDienThoai))
                 loi.Add("Số điện thoại không hợp lệ.");
             if (!ValidationHelper.IsValidEmail(nv.Email))
                 loi.Add("Email không hợp lệ.");
@@ -29,12 +31,20 @@ namespace QLShopCauLong.BLL
                 loi.Add("Lương phải lớn hơn 0.");
             if (laThemMoi && dal.KiemTraTonTai(nv.MaNhanVien))
                 loi.Add($"Mã nhân viên '{nv.MaNhanVien}' đã tồn tại.");
+
+            // === THÊM MỚI: kiểm tra trùng SĐT/Email ===
+            if (!string.IsNullOrWhiteSpace(nv.SoDienThoai) && dal.KiemTraTrungSDT(nv.SoDienThoai, maNVLoaiTru))
+                loi.Add($"Số điện thoại '{nv.SoDienThoai}' đã được dùng bởi nhân viên khác.");
+
+            if (!string.IsNullOrWhiteSpace(nv.Email) && dal.KiemTraTrungEmail(nv.Email, maNVLoaiTru))
+                loi.Add($"Email '{nv.Email}' đã được dùng bởi nhân viên khác.");
+
             return loi;
         }
 
         public (bool ThanhCong, List<string> Loi) Them(NhanVien nv)
         {
-            var loi = Validate(nv, true);
+            var loi = Validate(nv, true, maNVLoaiTru: null); // thêm mới, không loại trừ ai
             if (loi.Count > 0) return (false, loi);
             dal.Them(nv);
             return (true, loi);
@@ -42,7 +52,7 @@ namespace QLShopCauLong.BLL
 
         public (bool ThanhCong, List<string> Loi) Sua(NhanVien nv)
         {
-            var loi = Validate(nv, false);
+            var loi = Validate(nv, false, maNVLoaiTru: nv.MaNhanVien); // loại trừ chính nó
             if (loi.Count > 0) return (false, loi);
             bool ok = dal.Sua(nv);
             if (!ok) loi.Add("Nhân viên không tồn tại.");
@@ -58,5 +68,11 @@ namespace QLShopCauLong.BLL
             dal.Xoa(maNV);
             return (true, "Xóa thành công.");
         }
+
+        public bool KiemTraTrungSDT(string sdt, string maNVLoaiTru = null) => dal.KiemTraTrungSDT(sdt, maNVLoaiTru);
+        
+        public bool KiemTraTrungEmail(string email, string maNVLoaiTru = null) => dal.KiemTraTrungEmail(email, maNVLoaiTru);
+
+        public bool DaCoTaiKhoan(string maNV) => dal.DaCoTaiKhoan(maNV);
     }
 }

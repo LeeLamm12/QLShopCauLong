@@ -49,6 +49,12 @@ namespace QLShopCauLong.BLL
                 loi.Add("Vui lòng chọn nhân viên.");
             if (laThemMoi && dal.KiemTraTonTai(tk.TenDangNhap))
                 loi.Add($"Tên đăng nhập '{tk.TenDangNhap}' đã tồn tại.");
+
+            // === THÊM MỚI: 1 NV chỉ 1 tài khoản ===
+            if (laThemMoi && !ValidationHelper.IsNullOrEmpty(tk.MaNhanVien)
+                && new NhanVienBLL().DaCoTaiKhoan(tk.MaNhanVien))
+                loi.Add("Nhân viên này đã có tài khoản, không thể tạo thêm.");
+
             return loi;
         }
 
@@ -67,6 +73,17 @@ namespace QLShopCauLong.BLL
         {
             var loi = Validate(tk, false);
             if (loi.Count > 0) return (false, loi);
+
+            var tkCu = dal.LayTheoTenDangNhap(tk.TenDangNhap);
+            if (tkCu != null && tkCu.VaiTro == "Quản trị viên" && tk.VaiTro != "Quản trị viên")
+            {
+                int soAdmin = dal.LayDanhSach().Count(x => x.VaiTro == "Quản trị viên");
+                if (soAdmin <= 1)
+                {
+                    loi.Add("Không thể đổi vai trò: đây là quản trị viên cuối cùng của hệ thống.");
+                    return (false, loi);
+                }
+            }
 
             // Nếu mật khẩu chưa mã hóa (length != 64) thì mã hóa lại
             if (tk.MatKhau.Length != 64)
@@ -146,5 +163,7 @@ namespace QLShopCauLong.BLL
             dal.MoKhoaTaiKhoan(tenDangNhap);
             return (true, "Mở khóa tài khoản thành công.");
         }
+
+        public TaiKhoan LayTheoTenDangNhap(string tenDangNhap) => dal.LayTheoTenDangNhap(tenDangNhap);
     }
 }

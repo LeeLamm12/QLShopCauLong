@@ -75,5 +75,27 @@ namespace QLShopCauLong.DAL
                 }
             }
         }
+
+        public bool KiemTraTrungSDT(string sdt, string maNVLoaiTru = null)
+        {
+            using (var db = new QLShopCauLongEntities())
+            {
+                var query = db.NhanVien.Where(nv => nv.SoDienThoai == sdt);
+                if (!string.IsNullOrEmpty(maNVLoaiTru))
+                    query = query.Where(nv => nv.MaNhanVien != maNVLoaiTru);
+                return query.Any();
+            }
+        }
+
+        public bool KiemTraTrungEmail(string email, string maNVLoaiTru = null)
+        {
+            using (var db = new QLShopCauLongEntities())
+            {
+                var query = db.NhanVien.Where(nv => nv.Email == email);
+                if (!string.IsNullOrEmpty(maNVLoaiTru))
+                    query = query.Where(nv => nv.MaNhanVien != maNVLoaiTru);
+                return query.Any();
+            }
+        }
     }
 }

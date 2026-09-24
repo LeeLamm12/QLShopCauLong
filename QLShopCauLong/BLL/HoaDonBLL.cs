@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using QLShopCauLong.BLL.DTO;
 using QLShopCauLong.DAL;
+using System.Data.Entity.Validation;
 
 namespace QLShopCauLong.BLL
 {
@@ -12,8 +14,8 @@ namespace QLShopCauLong.BLL
         private readonly HoaDonDAL dal = new HoaDonDAL();
 
         public List<HoaDon> LayDanhSach() => dal.LayDanhSach();
-        public List<HoaDon> TimKiem(string tuKhoa, DateTime? tuNgay, DateTime? denNgay)
-            => dal.TimKiem(tuKhoa, tuNgay, denNgay);
+        public List<HoaDon> TimKiem(string tuKhoa)
+    => dal.TimKiem(tuKhoa);
         public HoaDon LayTheoMa(string ma) => dal.LayTheoMa(ma);
 
         public List<string> Validate(HoaDon hd, List<ChiTietHoaDon> chiTiet)
@@ -54,10 +56,28 @@ namespace QLShopCauLong.BLL
             if (hd.NgayLap == DateTime.MinValue)
                 hd.NgayLap = DateTime.Now;
 
+            // Gán MaHoaDon cho từng dòng chi tiết (quan trọng!)
+            foreach (var ct in chiTiet)
+            {
+                ct.MaHoaDon = hd.MaHoaDon;
+            }
+
             try
             {
                 dal.Them(hd, chiTiet);
                 return (true, loi);
+            }
+            catch (DbEntityValidationException ex) // BẮT LỖI VALIDATION CỦA EF
+            {
+                foreach (var eve in ex.EntityValidationErrors)
+                {
+                    string entityName = eve.Entry.Entity.GetType().Name;
+                    foreach (var ve in eve.ValidationErrors)
+                    {
+                        loi.Add($"[{entityName}] {ve.PropertyName}: {ve.ErrorMessage}");
+                    }
+                }
+                return (false, loi);
             }
             catch (Exception ex)
             {
@@ -82,8 +102,19 @@ namespace QLShopCauLong.BLL
             }
         }
 
-        public List<HoaDon> TimKiemNangCao(string tuKhoa, DateTime? tuNgay, DateTime? denNgay,
-                                   string maNhanVien, string phuongThucTT)
-    => dal.TimKiemNangCao(tuKhoa, tuNgay, denNgay, maNhanVien, phuongThucTT);
+        public List<HoaDon> TimKiemNangCao(string tuKhoa, string maNhanVien, string phuongThucTT)
+    => dal.TimKiemNangCao(tuKhoa, maNhanVien, phuongThucTT);
+
+        public List<ThongKeDoanhThuDTO> LayDoanhThuTheoNgay()
+        {
+            return new HoaDonDAL().LayDoanhThuTheoNgay();
+        }
+
+        public List<ThongKeNhanVienDTO> LayDoanhThuTheoNhanVien()
+        {
+            return new HoaDonDAL().LayDoanhThuTheoNhanVien();
+        }
+
+
     }
 }

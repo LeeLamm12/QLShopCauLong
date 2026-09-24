@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using QLShopCauLong.BLL.DTO;
 
 namespace QLShopCauLong.DAL
 {
@@ -21,7 +23,7 @@ namespace QLShopCauLong.DAL
             }
         }
 
-        public List<HoaDon> TimKiem(string tuKhoa, DateTime? tuNgay, DateTime? denNgay)
+        public List<HoaDon> TimKiem(string tuKhoa)
         {
             using (var db = new QLShopCauLongEntities())
             {
@@ -35,12 +37,6 @@ namespace QLShopCauLong.DAL
                     query = query.Where(hd => hd.MaHoaDon.Contains(tuKhoa)
                                            || hd.KhachHang.HoTen.Contains(tuKhoa));
 
-                if (tuNgay.HasValue)
-                    query = query.Where(hd => hd.NgayLap >= tuNgay.Value);
-
-                if (denNgay.HasValue)
-                    query = query.Where(hd => hd.NgayLap <= denNgay.Value);
-
                 return query.OrderByDescending(hd => hd.NgayLap).ToList();
             }
         }
@@ -50,6 +46,8 @@ namespace QLShopCauLong.DAL
             using (var db = new QLShopCauLongEntities())
             {
                 return db.HoaDon
+                    .Include("KhachHang")
+                    .Include("NhanVien")
                     .Include("ChiTietHoaDon.SanPham")
                     .FirstOrDefault(hd => hd.MaHoaDon == maHD);
             }
@@ -77,7 +75,7 @@ namespace QLShopCauLong.DAL
                     int stt = 1;
                     foreach (var ct in chiTiet)
                     {
-                        ct.MaChiTietHD = hd.MaHoaDon + "_" + stt.ToString("00");
+                        ct.MaChiTietHD = "CT" + DateTime.Now.ToString("HHmmss") + stt.ToString("D2");
                         ct.MaHoaDon = hd.MaHoaDon;
                         db.ChiTietHoaDon.Add(ct);
 
@@ -145,8 +143,7 @@ namespace QLShopCauLong.DAL
         /// <summary>
         /// Tìm kiếm nâng cao: theo ngày + nhân viên + phương thức TT
         /// </summary>
-        public List<HoaDon> TimKiemNangCao(string tuKhoa, DateTime? tuNgay, DateTime? denNgay,
-                                           string maNhanVien, string phuongThucTT)
+        public List<HoaDon> TimKiemNangCao(string tuKhoa, string maNhanVien, string phuongThucTT)
         {
             using (var db = new QLShopCauLongEntities())
             {
@@ -160,19 +157,67 @@ namespace QLShopCauLong.DAL
                     query = query.Where(hd => hd.MaHoaDon.Contains(tuKhoa)
                                            || hd.KhachHang.HoTen.Contains(tuKhoa));
 
-                if (tuNgay.HasValue)
-                    query = query.Where(hd => hd.NgayLap >= tuNgay.Value);
-
-                if (denNgay.HasValue)
-                    query = query.Where(hd => hd.NgayLap <= denNgay.Value);
-
                 if (!string.IsNullOrWhiteSpace(maNhanVien))
                     query = query.Where(hd => hd.MaNhanVien == maNhanVien);
 
-                if (!string.IsNullOrWhiteSpace(phuongThucTT))
-                    query = query.Where(hd => hd.PhuongThucThanhToan == phuongThucTT);
+                var result = query.OrderByDescending(hd => hd.NgayLap).ToList();
 
-                return query.OrderByDescending(hd => hd.NgayLap).ToList();
+                // Lọc PTTT ở client để tránh lỗi padding/khoảng trắng từ cột kiểu char/nchar
+                if (!string.IsNullOrWhiteSpace(phuongThucTT))
+                {
+                    string p = phuongThucTT.Trim();
+                    result = result.Where(hd => hd.PhuongThucThanhToan != null
+                                              && hd.PhuongThucThanhToan.Trim() == p).ToList();
+                }
+
+                return result;
+            }
+        }
+
+        /// <summary>
+        /// Lấy doanh thu theo từng ngày trong khoảng thời gian (cho line chart Dashboard)
+        /// </summary>
+        public List<ThongKeDoanhThuDTO> LayDoanhThuTheoNgay()
+        {
+            using (var db = new QLShopCauLongEntities())
+            {
+                var rawData = db.HoaDon
+                    .GroupBy(hd => DbFunctions.TruncateTime(hd.NgayLap))
+                    .Select(g => new
+                    {
+                        Ngay = g.Key.Value,
+                        TongDoanhThu = g.Sum(x => x.TongTien) ?? 0,
+                        SoLuong = g.Count()
+                    })
+                    .OrderBy(x => x.Ngay)
+                    .ToList();
+
+                return rawData.Select(x => new ThongKeDoanhThuDTO
+                {
+                    ThoiGian = x.Ngay.ToString("dd/MM/yyyy"),
+                    DoanhThu = x.TongDoanhThu,
+                    SoLuongHoaDon = x.SoLuong
+                }).ToList();
+            }
+        }
+
+        public List<ThongKeNhanVienDTO> LayDoanhThuTheoNhanVien()
+        {
+            using (var db = new QLShopCauLongEntities())
+            {
+                return db.HoaDon
+                    .Include("NhanVien")
+                    .GroupBy(hd => new { hd.MaNhanVien, hd.NhanVien.HoTen })
+                    .Select(g => new ThongKeNhanVienDTO
+                    {
+                        MaNhanVien = g.Key.MaNhanVien,
+                        HoTen = g.Key.HoTen,
+                        SoHoaDon = g.Count(),
+                        DoanhThu = g.Sum(x => x.TongTien) ?? 0
+                    })
+                    .OrderByDescending(x => x.DoanhThu)
+                    .Take(5)
+                    .ToList();
             }
         }
     }
